@@ -75,7 +75,6 @@
                     <img src="<?php echo base_url();?>resource/assets/img/find_user.png" class="user-image img-responsive"/>
                 </li>
 
-
                 <li>
                     <a class="active-menu"  href="<?php echo base_url();?>backdoor/"><i class="fa fa-dashboard fa-2x"></i> Dashboard</a>
                 </li>
