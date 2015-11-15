@@ -1,4 +1,4 @@
-<?php include 'header_register_form.php'; ?>
+
 
 <div class="login_page_bg">
 <div class="row">
@@ -26,4 +26,3 @@
     </div>
 </div>
 </div>
-<?php include 'footer.php'; ?>

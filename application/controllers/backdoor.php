@@ -5,9 +5,26 @@ class Backdoor extends CI_Controller {
 
     public function index()
     {
+        if($this->session->userdata('email_address')){
+            redirect('backdoor/dashboard');
+        }else{
+            $data['title']="Login";
+            $this->load->view('admin/includes/admin_header');
+            $this->load->view('admin/login',$data);
+            $this->load->view('admin/includes/admin_footer');
+
+        }
+    }
+
+    public function dashboard()
+    {
+        if($this->session->userdata('email_address')){
+            redirect('backdoor/dashboard');
+        }else{
         $this->load->view('admin/includes/admin_header');
         $this->load->view('admin/index');
         $this->load->view('admin/includes/admin_footer');
+        }
     }
     public function adb_fact_sheet()
     {
